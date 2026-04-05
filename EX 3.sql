@@ -1,4 +1,5 @@
-drop table Bank_customer01
+IF OBJECT_ID('dbo.Bank_customer01', 'U') IS NOT NULL
+    DROP TABLE dbo.Bank_customer01;
 CREATE TABLE Bank_customer01 ( 
 accno INT PRIMARY KEY,
 cust_name VARCHAR(50), 
