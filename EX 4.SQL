@@ -1,10 +1,10 @@
-IF OBJECT_ID('dbo.Myjob_history','U') IS NOT NULL
+IF OBJECT_ID('dbo.job0_history','U') IS NOT NULL
 BEGIN
-DROP TABLE dbo.Myjob_history;
+DROP TABLE dbo.job0_history;
 END
 
-IF OBJECT_ID('dbo.MyJobs','U') IS NOT NULL
-    DROP TABLE dbo.MyJobs;
+IF OBJECT_ID('dbo.Job0','U') IS NOT NULL
+    DROP TABLE dbo.Job0;
 CREATE TABLE jobs0 (
 job_id INT PRIMARY KEY, 
 job_title VARCHAR(50)
