@@ -1,4 +1,7 @@
-drop table countriesS
+IF OBJECT_ID('dbo.count70','U')IS NOT NULL
+BEGIN 
+DROP TABLE dbo.count70;
+END;
 CREATE TABLE countriesS (
 country_id INT,
 country_name VARCHAR(50), 
